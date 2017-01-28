@@ -1,3 +1,88 @@
+.modal-open section {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  transform: rotateX(0deg);
+}
+
+.modal-open .modal-popup {
+  display: block;
+}
+
+.modal-popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal-popup .modal-bg {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99991;
+}
+
+.modal-popup .modal-content {
+  z-index: 99992;
+  position: absolute;
+  background-color: #FAFAFA;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  width: 400px;
+}
+
+.modal-popup .modal-content .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+}
+
+.modal-popup .modal-content .close a {
+  color: #1a237e;
+  opacity: 0.25;
+}
+
+.modal-popup .modal-content .close a:hover {
+  opacity: 1;
+}
+
+.modal-popup .modal-content .header {
+  text-align: center;
+  font-size: 26px;
+  color: #3f51b5;
+}
+
+.modal-popup .modal-content .soc-elements {
+  margin: 0 auto;
+  padding: 20px;
+  display: table;
+}
+
+.modal-popup .modal-content .soc-elements .soc {
+  font-size: 25px;
+  color: white;
+  background-color: #1a237e;
+  border-radius: 50%;
+  margin: 10px;
+  float: left;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
 body {
   background-color: #3f51b5;
   color: white;
