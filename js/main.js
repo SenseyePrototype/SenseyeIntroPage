@@ -16,7 +16,10 @@ $(document).ready(function(){
             "HTML": null,
             "Git": 'https://git-scm.com/images/logos/downloads/Git-Icon-Black.png'
         },
-        limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+        limit: 20,
+        onAutocomplete: function (text) {
+            console.log(text)
+        }
     });
 });
 
