@@ -44,6 +44,14 @@ $(document).ready(function () {
 
     $('.js-skill-list').on('click', '.js-delete', function () {
         $(this).closest('.js-skill').remove();
-    })
+    });
+
+    $('.js-skill-list').on('click', '.point', function () {
+        var $point = $(this);
+
+        $point.nextAll().removeClass('active');
+        $point.prevAll().addClass('active');
+        $point.addClass('active');
+    });
 });
 
