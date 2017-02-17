@@ -21,9 +21,7 @@ $(document).ready(function(){
             console.log(text)
         }
     });
-});
 
-$(document).ready(function() {
     $('select').material_select();
 });
 
