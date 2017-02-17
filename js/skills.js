@@ -18,6 +18,7 @@ $(document).ready(function () {
     };
 
     var $complete = $('input.autocomplete');
+    $complete.focus();
 
     $complete.autocomplete({
         data: skills,
