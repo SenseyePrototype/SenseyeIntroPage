@@ -1,24 +1,42 @@
-$('.js-auth-open').on('click', function(){
+$('.js-auth-open').on('click', function () {
     $('body').addClass('modal-open');
 });
 
-$('.modal-popup .close, .modal-popup .modal-bg').on('click', function(){
+$('.modal-popup .close, .modal-popup .modal-bg').on('click', function () {
     $('body').removeClass('modal-open');
 });
 
 /**
  * Init Skills search
  */
-$(document).ready(function(){
+$(document).ready(function () {
+    function addSkill(text) {
+        var template = $('#js-skill-template').html();
+
+        var $skill = $(template);
+
+        $skill.find('.js-name').html(text);
+
+        $('.js-skill-list').prepend($skill);
+    }
+
+    var skills = {
+        "CSS": null,
+        "HTML": null,
+        "Git": 'https://git-scm.com/images/logos/downloads/Git-Icon-Black.png'
+    };
+
     $('input.autocomplete').autocomplete({
-        data: {
-            "CSS": null,
-            "HTML": null,
-            "Git": 'https://git-scm.com/images/logos/downloads/Git-Icon-Black.png'
-        },
+        data: skills,
         limit: 20,
-        onAutocomplete: function (text) {
-            console.log(text)
+        onAutocomplete: addSkill
+    });
+
+    $('.js-add-skill').click(function () {
+        var text = $('input.autocomplete').val();
+
+        if (skills.hasOwnProperty(text)) {
+            addSkill(text);
         }
     });
 
