@@ -53,5 +53,11 @@ $(document).ready(function () {
         $point.prevAll().addClass('active');
         $point.addClass('active');
     });
+
+    $('.js-skill-list').sortable({
+        update: function( event, ui ) {
+            console.log(ui.item.find('.s2').html());
+        }
+    });
 });
 
