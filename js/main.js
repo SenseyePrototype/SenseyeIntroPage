@@ -23,5 +23,9 @@ $(document).ready(function(){
     });
 
     $('select').material_select();
+
+    $('.js-skill-list').on('click', '.js-delete', function () {
+        $(this).closest('.js-skill').remove();
+    })
 });
 
