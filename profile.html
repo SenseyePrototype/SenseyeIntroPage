@@ -62,7 +62,10 @@
         <div class="row">
             <div class="col s3 left-menu">
                 <div class="block active">
-                    <a href="./profile.html" class="name">Профиль</a>
+                    <a href="./profile.html" class="name">Моя Страница</a>
+                </div>
+                <div class="block">
+                    <a href="./profile_edit.html" class="name">Профиль</a>
                 </div>
                 <div class="block">
                     <a href="./skills.html" class="name">Навыки</a>
@@ -71,59 +74,126 @@
                     <a href="javascript:void(0);" class="name">Контакты</a>
                 </div>
                 <div class="block">
+                    <a href="javascript:void(0);" class="name">Сообщения</a>
+                </div>
+                <div class="block">
                     <a href="javascript:void(0);" class="name">Выйти</a>
                 </div>
             </div>
-            <div class="col s9">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-account"></i>
-                    <input id="title" type="text" class="validate">
-                    <label for="title">Должность</label>
+            <div class="col s9 view z-depth-3">
+                <div class="post-date">27 ноября 2016</div>
+                <h4 class="center-align">Full Stack Web Dev</h4>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Вознаграждение
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-money"></i> 5000$
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-money"></i>
-                    <input id="salary" type="number" class="validate">
-                    <label for="salary">Вознаграждение</label>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Ваш город
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-pin"></i> Киев
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-pin"></i>
-                    <select id="city">
-                        <option value="kyiv">Киев</option>
-                        <option value="odesa">Одесса</option>
-                        <option value="lviv">Львов</option>
-                    </select>
-                    <!-- <label for="city">Ваш город</label> -->
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Описание
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-assignment"></i> I'm a 25 y.o. web developer focusing on PHP5, MySQL, NodeJS, CSS3, jQuery and JS. I am experienced in architecting and developing large scale web applications and delivering on-time.
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-brush"></i>
-                    <textarea id="discription" type="text" class="materialize-textarea validate"></textarea>
-                    <label for="discription">Описание</label>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Опыт
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-functions"></i> 6 year
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-functions"></i>
-                    <input id="exp" type="number" class="validate">
-                    <label for="exp">Опыт</label>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Обязательно в вакансии
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-shield-check"></i> Love
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-shield-check"></i>
-                    <textarea id="assert" type="text" class="materialize-textarea validate"></textarea>
-                    <label for="assert">Обязательно в вакансии</label>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Ожидание от вакансии
+                    </div>
+                    <div class="col s12">
+                        <i class="zmdi zmdi-puzzle-piece"></i> On Beach with my mac
+                    </div>
                 </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix zmdi zmdi-puzzle-piece"></i>
-                    <textarea id="expect" type="text" class="materialize-textarea validate"></textarea>
-                    <label for="expect">Ожидание от вакансии</label>
-                </div>
-                <div class="input-field col s12">
-                    <input type="checkbox" id="publish" checked="checked"/>
-                    <label for="publish">
-                        Опубликовать
-                    </label>
-                </div>
-                <div class="input-field col s12 padding-top">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">
-                        Сохранить
-                    </button>
+                <div class="field col s12">
+                    <div class="title col s12">
+                        Навыки
+                    </div>
+                    <div class="col s12 skills js-skill-list">
+                        <div class="skill col s12 js-skill">
+                            <div class="col s2">
+                                Git
+                            </div>
+                            <div class="col s10">
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                            </div>
+                        </div>
+                        <div class="skill col s12 js-skill">
+                            <div class="col s2">
+                                Jira
+                            </div>
+                            <div class="col s10">
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                            </div>
+                        </div>
+                        <div class="skill col s12 js-skill">
+                            <div class="col s2">
+                                Laravel
+                            </div>
+                            <div class="col s10">
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point active"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                                <div class="point"></div>
+                            </div>
+                        </div>
+
+                        <div class="link-original">
+                            <a href="/">
+                                <i class="zmdi zmdi-link"></i> Vergo
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
