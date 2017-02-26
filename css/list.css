@@ -1,3 +1,5 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 .modal-open section {
   -webkit-filter: blur(10px);
   -moz-filter: blur(10px);
@@ -37,9 +39,9 @@
   padding: 20px;
   top: 50%;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -150px;
   margin-top: -100px;
-  width: 400px;
+  width: 300px;
 }
 
 .modal-popup .modal-content .close {
